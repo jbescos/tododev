@@ -30,14 +30,10 @@ public class ApplyGuiceContextFilter implements ContainerRequestFilter, Containe
 	}
 
 	@Override
-	public void filter(final ContainerRequestContext requestContext)
-			throws IOException {
+	public void filter(final ContainerRequestContext requestContext) throws IOException {
 		
 	}
 
 	@Override
-	public void filter(final ContainerRequestContext requestContext,
-			final ContainerResponseContext responseContext) throws IOException {
-		
-	}
+	public void filter(final ContainerRequestContext requestContext, final ContainerResponseContext responseContext) throws IOException {}
 }

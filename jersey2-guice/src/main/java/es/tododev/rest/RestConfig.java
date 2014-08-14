@@ -9,20 +9,21 @@ import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 
-import com.google.inject.Binder;
+import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Module;
 
 public class RestConfig extends ResourceConfig {
 
 	@Inject
     public RestConfig() {
-    	this(Guice.createInjector(new Module(){
+    	this(Guice.createInjector(new AbstractModule(){
+
 			@Override
-			public void configure(Binder arg0) {
+			protected void configure() {
 				// TODO Auto-generated method stub
 			}
+
     	}));
     }
     
