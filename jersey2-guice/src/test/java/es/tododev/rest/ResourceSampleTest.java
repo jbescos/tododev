@@ -19,7 +19,11 @@ import org.mockito.MockitoAnnotations;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.matcher.Matchers;
 import com.google.inject.name.Names;
+
+import es.tododev.aop.LogMethod;
+import es.tododev.aop.LogMethod.LogIt;
 
 public class ResourceSampleTest extends JerseyTest {
 
@@ -28,6 +32,8 @@ public class ResourceSampleTest extends JerseyTest {
 		@Override
 		public void configure() {
 			bind(String.class).annotatedWith(Names.named(ResourceSample.STRING_KEY)).toInstance(EXPECTED_STRING);
+			bind(ServiceSample.class);
+			bindInterceptor(Matchers.any(), Matchers.annotatedWith(LogIt.class), new LogMethod());
 		}
 	});
 	
