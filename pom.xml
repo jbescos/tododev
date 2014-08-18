@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>jersey2-guice</module>
+		<module>jersey2-guiceSquarespaceSolution</module>
 	</modules>
 
 	<build>
