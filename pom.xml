@@ -16,7 +16,6 @@
 	<modules>
 		<module>jersey2-guice</module>
 		<module>jersey2-guiceSquarespaceSolution</module>
-		<module>ps3BluetoothCtrl</module>
 	</modules>
 
 	<build>
