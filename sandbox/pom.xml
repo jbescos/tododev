@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>es.tododev</groupId>
+		<artifactId>sample</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>sandbox</artifactId>
+	<packaging>jar</packaging>
+	<groupId>es.tododev.sandbox</groupId>
+	<properties>
+		<jersey.version>2.9</jersey.version>
+		<hk2.version>2.3.0-b10</hk2.version>
+	</properties>
+	<dependencies>
+
+
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
