@@ -11,23 +11,27 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<log4j2.version>2.10.0</log4j2.version>
 	</properties>
 
 	<modules>
 		<module>jersey2-guice</module>
 		<module>jersey2-guiceSquarespaceSolution</module>
 		<module>sandbox</module>
+		<module>deeplearning</module>
 	</modules>
 
 	<build>
 		<pluginManagement>
 			<plugins>
 				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>3.7.0</version>
+					<inherited>true</inherited>
 					<configuration>
-						<source>1.7</source>
-						<target>1.7</target>
+						<source>8</source>
+						<target>8</target>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -35,6 +39,21 @@
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
 		<!-- Testing -->
 		<dependency>
 			<groupId>junit</groupId>
